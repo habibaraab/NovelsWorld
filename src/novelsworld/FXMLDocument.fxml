@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="novelsworld.FXMLDocumentController">
+   <children>
+      <AnchorPane fx:id="login_form" onDragDetected="#switchForm" onMouseClicked="#switchForm" prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <ImageView fitHeight="600.0" fitWidth="400.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.8000000000000682" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="400.0" AnchorPane.topAnchor="1.0">
+               <image>
+                  <Image url="@image%20book/1.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="105.0" layoutY="254.0" prefHeight="55.0" prefWidth="190.0" text="Novels World" textAlignment="CENTER" AnchorPane.bottomAnchor="292.40000000000003" AnchorPane.rightAnchor="504.6" AnchorPane.topAnchor="254.0">
+               <font>
+                  <Font name="Gigi" size="33.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="400.0" layoutY="1.0" onMouseClicked="#switchForm" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #534f4a;" styleClass="right-form" stylesheets="@LoginDesign.css">
+               <children>
+                  <Label layoutX="128.0" layoutY="182.0" style="-fx-font-family: #b79e87;" stylesheets="@LoginDesign.css" text="Login Admin" textFill="#b79e87">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="username" layoutX="61.0" layoutY="280.0" prefHeight="40.0" prefWidth="274.0" promptText="username" styleClass="textfield" stylesheets="@LoginDesign.css" />
+                  <PasswordField fx:id="password" layoutX="61.0" layoutY="347.0" prefHeight="40.0" prefWidth="274.0" promptText="password" styleClass="textfield" stylesheets="@LoginDesign.css" />
+                  <Button fx:id="loginbtn" layoutX="61.0" layoutY="431.0" mnemonicParsing="false" onAction="#login" prefHeight="48.0" prefWidth="274.0" style="-fx-background-color: #b79e87;" styleClass="login-btn" stylesheets="@LoginDesign.css" text="Login">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Button>
+                  <Button fx:id="close" layoutX="325.0" layoutY="14.0" mnemonicParsing="false" onAction="#close" prefHeight="25.0" prefWidth="50.0" styleClass="close" stylesheets="@LoginDesign.css" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                     <graphic>
+                     </graphic></Button>
+                  <Hyperlink fx:id="create_account" layoutX="103.0" layoutY="517.0" onAction="#switchForm" text="create a new account" textFill="#84b4a0">
+                     <font>
+                        <Font name="Gill Sans Ultra Bold Condensed" size="20.0" />
+                     </font></Hyperlink>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="signup_form" onDragDetected="#switchForm" prefHeight="600.0" prefWidth="800.0" visible="false">
+         <children>
+            <ImageView fitHeight="600.0" fitWidth="400.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.8000000000000682" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="400.0" AnchorPane.topAnchor="1.0">
+               <image>
+                  <Image url="@image%20book/11.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="32.0" layoutY="1.0" prefHeight="55.0" prefWidth="190.0" text="Novels World" textAlignment="CENTER" AnchorPane.bottomAnchor="547.0" AnchorPane.rightAnchor="580.8000000000001" AnchorPane.topAnchor="1.0">
+               <font>
+                  <Font name="Gigi" size="35.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="391.0" layoutY="-1.0" prefHeight="602.0" prefWidth="411.0" style="-fx-background-color: #754741;" styleClass="right-form" stylesheets="@LoginDesign.css">
+               <children>
+                  <Label layoutX="148.0" layoutY="186.0" style="-fx-font-family: #b79e87;" stylesheets="@LoginDesign.css" text="SIGN UP" textFill="#9c8464">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="username_signup" layoutX="61.0" layoutY="321.0" prefHeight="40.0" prefWidth="274.0" promptText="username" styleClass="textfield" stylesheets="@LoginDesign.css" />
+                  <PasswordField fx:id="password_signup" layoutX="61.0" layoutY="383.0" prefHeight="40.0" prefWidth="274.0" promptText="password" styleClass="textfield" stylesheets="@LoginDesign.css" />
+                  <Button fx:id="signupbtn" layoutX="61.0" layoutY="454.0" mnemonicParsing="false" onAction="#signup" prefHeight="48.0" prefWidth="274.0" style="-fx-background-color: #9c8464;" styleClass="login-btn" stylesheets="@LoginDesign.css" text="Sign Up">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="close_signup" layoutX="325.0" layoutY="14.0" mnemonicParsing="false" onAction="#close" prefHeight="25.0" prefWidth="50.0" styleClass="close" stylesheets="@LoginDesign.css" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                     <graphic>
+                       
+                     </graphic>
+                  </Button>
+                  <TextField fx:id="email_signup" layoutX="61.0" layoutY="261.0" prefHeight="40.0" prefWidth="274.0" promptText="email address" styleClass="textfield" stylesheets="@LoginDesign.css" />
+                  <Hyperlink fx:id="have_account" layoutX="84.0" layoutY="525.0" onAction="#switchForm" text="Already have an account" textFill="#b19ca4">
+                     <font>
+                        <Font name="Gill Sans Ultra Bold Condensed" size="20.0" />
+                     </font></Hyperlink>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

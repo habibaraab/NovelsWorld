@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="1060.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="260.0" layoutY="74.0" prefHeight="587.0" prefWidth="960.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <BorderPane layoutX="340.0" layoutY="94.0" prefHeight="587.0" prefWidth="941.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <AnchorPane prefHeight="46.0" prefWidth="970.0" styleClass="semiTop-form" stylesheets="@DashboardDesign.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="1.0" layoutY="7.0" prefHeight="33.0" prefWidth="1050.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="2.0" prefHeight="21.0" prefWidth="222.0" text="NovelsWorld">
+                                 <font>
+                                    <Font name="System Bold" size="21.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </top>
+               <left>
+                  <AnchorPane prefHeight="541.0" prefWidth="222.0" style="-fx-background-color: #9c8464;" styleClass="nav-form" stylesheets="@DashboardDesign.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label layoutX="65.0" layoutY="97.0" text="WelcomeBack" />
+                        <Label layoutX="56.0" layoutY="118.0" text="AyaElgamy">
+                           <font>
+                              <Font name="System Bold" size="21.0" />
+                           </font>
+                        </Label>
+                        <Line endX="107.0" layoutX="115.0" layoutY="183.0" startX="-115.0" />
+                        <Button layoutX="54.0" layoutY="226.0" mnemonicParsing="false" styleClass="nav-btn" text="Dashboard" />
+                        <Button layoutX="38.0" layoutY="286.0" mnemonicParsing="false" styleClass="nav-btn" text="AvaliablesNovel" />
+                        <Button layoutX="60.0" layoutY="356.0" mnemonicParsing="false" styleClass="nav-btn" text="Favourite" />
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="541.0" prefWidth="896.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="297.0" layoutY="112.0" prefHeight="588.0" prefWidth="838.0" stylesheets="@DashboardDesign.css" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="20.0" layoutY="15.0" prefHeight="561.0" prefWidth="263.0" stylesheets="@DashboardDesign.css">
+                                 <children>
+                                    <AnchorPane layoutX="43.0" layoutY="21.0" prefHeight="202.0" prefWidth="167.0" stylesheets="@../../../NovelsWorld-main/src/novelsworld/DashboardDesign.css">
+                                       <children>
+                                          <ImageView fitHeight="202.0" fitWidth="175.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" />
+                                          <Button layoutX="-1.0" layoutY="164.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="175.0" style="-fx-background-radius: 5px;" styleClass="add-btn" stylesheets="@../../../NovelsWorld-main/src/novelsworld/DashboardDesign.css" text="Import">
+                                             <font>
+                                                <Font name="System Bold" size="16.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                    </AnchorPane>
+                                    <Label layoutX="14.0" layoutY="247.0" text="Label" />
+                                    <Label layoutX="14.0" layoutY="281.0" text="Label" />
+                                    <Label layoutX="14.0" layoutY="317.0" text="Label" />
+                                    <Label layoutX="14.0" layoutY="349.0" text="Label" />
+                                    <Label layoutX="14.0" layoutY="379.0" text="Label" />
+                                    <Label layoutX="14.0" layoutY="415.0" text="Label" />
+                                    <TextField layoutX="62.0" layoutY="242.0" />
+                                    <TextField layoutX="62.0" layoutY="276.0" />
+                                    <TextField layoutX="62.0" layoutY="312.0" />
+                                    <TextField layoutX="62.0" layoutY="344.0" />
+                                    <DatePicker layoutX="65.0" layoutY="385.0" prefHeight="31.0" prefWidth="181.0" />
+                                    <TextField layoutX="62.0" layoutY="421.0" />
+                                    <Button layoutX="33.0" layoutY="459.0" mnemonicParsing="false" styleClass="add-btn" stylesheets="@../../../NovelsWorld-main/src/novelsworld/DashboardDesign.css" text="Button" />
+                                    <Button layoutX="152.0" layoutY="459.0" mnemonicParsing="false" styleClass="update-btn" stylesheets="@../../../NovelsWorld-main/src/novelsworld/DashboardDesign.css" text="Button" />
+                                    <Button layoutX="30.0" layoutY="509.0" mnemonicParsing="false" styleClass="clear-btn" stylesheets="@../../../NovelsWorld-main/src/novelsworld/DashboardDesign.css" text="Button" />
+                                    <Button layoutX="152.0" layoutY="509.0" mnemonicParsing="false" styleClass="delete-btn" stylesheets="@../../../NovelsWorld-main/src/novelsworld/DashboardDesign.css" text="Button" />
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="shadow" />
+                                    <String fx:value="white-bg" />
+                                 </styleClass>
+                              </AnchorPane>
+                              <AnchorPane layoutX="300.0" layoutY="15.0" prefHeight="561.0" prefWidth="529.0">
+                                 <children>
+                                    <TableView layoutX="8.0" layoutY="51.0" prefHeight="504.0" prefWidth="526.0">
+                                      <columns>
+                                        <TableColumn prefWidth="81.0" text="C1" />
+                                        <TableColumn prefWidth="97.0" text="C2" />
+                                          <TableColumn prefWidth="73.0" text="Column X" />
+                                          <TableColumn prefWidth="96.0" text="Column X" />
+                                          <TableColumn prefWidth="91.0" text="Column X" />
+                                          <TableColumn prefWidth="87.0" text="Column X" />
+                                      </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                           <styleClass>
+                              <String fx:value="shadow" />
+                              <String fx:value="white-bg" />
+                           </styleClass>
+                        </AnchorPane>
+                        <AnchorPane layoutX="-2.0" layoutY="-2.0" prefHeight="589.0" prefWidth="840.0">
+                           <children>
+                              <AnchorPane layoutX="8.0" layoutY="3.0" prefHeight="239.0" prefWidth="817.0" stylesheets="@DashboardDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="3.0">
+                                 <children>
+                                    <AnchorPane layoutX="14.0" layoutY="16.0" prefHeight="215.0" prefWidth="123.0" style="-fx-background-color: #837163;" styleClass="card-form" stylesheets="@DashboardDesign.css">
+                                       <children>
+                                          <ImageView fitHeight="201.0" fitWidth="119.0" layoutX="4.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@image%20book/3.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane layoutX="153.0" layoutY="17.0" prefHeight="214.0" prefWidth="121.0" style="-fx-background-color: #837163;" styleClass="card-form" stylesheets="@DashboardDesign.css">
+                                       <children>
+                                          <ImageView fitHeight="202.0" fitWidth="120.0" layoutX="4.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@image%20book/z.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane layoutX="290.0" layoutY="19.0" prefHeight="210.0" prefWidth="116.0" style="-fx-background-color: #837163;" styleClass="card-form" stylesheets="@DashboardDesign.css">
+                                       <children>
+                                          <ImageView fitHeight="198.0" fitWidth="118.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@image%20book/b.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane layoutX="422.0" layoutY="18.0" prefHeight="209.0" prefWidth="125.0" style="-fx-background-color: #837163;" styleClass="card-form" stylesheets="@DashboardDesign.css">
+                                       <children>
+                                          <ImageView fitHeight="212.0" fitWidth="117.0" layoutX="3.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@image%20book/m.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane layoutX="561.0" layoutY="20.0" prefHeight="209.0" prefWidth="114.0" style="-fx-background-color: #837163;" styleClass="card-form" stylesheets="@DashboardDesign.css">
+                                       <children>
+                                          <ImageView fitHeight="242.0" fitWidth="112.0" layoutX="5.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@image%20book/11.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </AnchorPane>
+                                    <ImageView fitHeight="322.0" fitWidth="815.0" layoutX="6.0" layoutY="253.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@image%20book/hh.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="322.0" fitWidth="283.0" layoutX="555.0" layoutY="253.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@image%20book/12.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="white-bg" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                              </AnchorPane>
+                              <AnchorPane layoutX="692.0" layoutY="26.0" prefHeight="209.0" prefWidth="122.0" style="-fx-background-color: #837163;" styleClass="card-form" stylesheets="@DashboardDesign.css">
+                                 <children>
+                                    <ImageView fitHeight="199.0" fitWidth="115.0" layoutX="4.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@image%20book/5.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
