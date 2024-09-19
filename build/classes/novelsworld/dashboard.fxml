@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import java.lang.String?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
@@ -53,7 +55,7 @@
                <center>
                   <AnchorPane prefHeight="541.0" prefWidth="896.0" BorderPane.alignment="CENTER">
                      <children>
-                        <AnchorPane layoutX="297.0" layoutY="112.0" prefHeight="588.0" prefWidth="838.0" stylesheets="@DashboardDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <AnchorPane layoutX="297.0" layoutY="112.0" prefHeight="588.0" prefWidth="838.0" stylesheets="@DashboardDesign.css" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <children>
                               <AnchorPane layoutX="20.0" layoutY="15.0" prefHeight="561.0" prefWidth="263.0" stylesheets="@DashboardDesign.css">
                                  <children>
@@ -77,12 +79,12 @@
                                     <Label layoutX="14.0" layoutY="349.0" text="Label" />
                                     <Label layoutX="14.0" layoutY="379.0" text="Label" />
                                     <Label layoutX="14.0" layoutY="415.0" text="Label" />
-                                    <TextField layoutX="62.0" layoutY="242.0" />
-                                    <TextField layoutX="62.0" layoutY="276.0" />
-                                    <TextField layoutX="62.0" layoutY="312.0" />
-                                    <TextField layoutX="62.0" layoutY="344.0" />
-                                    <DatePicker layoutX="65.0" layoutY="385.0" prefHeight="31.0" prefWidth="181.0" />
-                                    <TextField layoutX="62.0" layoutY="421.0" />
+                                    <TextField layoutX="62.0" layoutY="242.0" styleClass="textfield_take" />
+                                    <TextField layoutX="62.0" layoutY="276.0" styleClass="textfield_take" />
+                                    <TextField layoutX="62.0" layoutY="312.0" styleClass="textfield_take" />
+                                    <TextField layoutX="62.0" layoutY="344.0" styleClass="textfield_take" />
+                                    <DatePicker layoutX="65.0" layoutY="385.0" prefHeight="31.0" prefWidth="181.0" styleClass="textfield_take" />
+                                    <TextField layoutX="62.0" layoutY="421.0" styleClass="textfield_take" />
                                     <Button layoutX="33.0" layoutY="459.0" mnemonicParsing="false" styleClass="add-btn" stylesheets="@../../../NovelsWorld-main/src/novelsworld/DashboardDesign.css" text="Button" />
                                     <Button layoutX="152.0" layoutY="459.0" mnemonicParsing="false" styleClass="update-btn" stylesheets="@../../../NovelsWorld-main/src/novelsworld/DashboardDesign.css" text="Button" />
                                     <Button layoutX="30.0" layoutY="509.0" mnemonicParsing="false" styleClass="clear-btn" stylesheets="@../../../NovelsWorld-main/src/novelsworld/DashboardDesign.css" text="Button" />
@@ -112,6 +114,9 @@
                               <String fx:value="shadow" />
                               <String fx:value="white-bg" />
                            </styleClass>
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
                         </AnchorPane>
                         <AnchorPane layoutX="-2.0" layoutY="-2.0" prefHeight="589.0" prefWidth="840.0" visible="false">
                            <children>
@@ -185,6 +190,60 @@
                                           <Image url="@image%20book/5.jpg" />
                                        </image>
                                     </ImageView>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="103.0" layoutY="85.0" prefHeight="588.0" prefWidth="838.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="240.0" prefWidth="811.0" stylesheets="@DashboardDesign.css">
+                                 <styleClass>
+                                    <String fx:value="shadow" />
+                                    <String fx:value="white-bg" />
+                                 </styleClass>
+                                 <children>
+                                    <Label layoutX="56.0" layoutY="33.0" text="Label" />
+                                    <Label layoutX="56.0" layoutY="93.0" text="Label" />
+                                    <ComboBox layoutX="104.0" layoutY="28.0" prefWidth="150.0" styleClass="textfield_take" />
+                                    <ComboBox layoutX="104.0" layoutY="88.0" prefWidth="150.0" styleClass="textfield_take" />
+                                    <Button layoutX="306.0" layoutY="39.0" mnemonicParsing="false" styleClass="add-btn" text="Button" />
+                                    <Label layoutX="74.0" layoutY="146.0" text="Label" />
+                                    <Label layoutX="144.0" layoutY="146.0" text="Label" />
+                                    <Button layoutX="147.0" layoutY="185.0" mnemonicParsing="false" styleClass="add-btn" text="Button" />
+                                    <AnchorPane layoutX="396.0" layoutY="-1.0" prefHeight="243.0" prefWidth="417.0" styleClass="info" stylesheets="@DashboardDesign.css">
+                                       <children>
+                                          <Label layoutX="28.0" layoutY="14.0" text="Label" />
+                                          <Label layoutX="28.0" layoutY="55.0" text="Label" />
+                                          <Label layoutX="28.0" layoutY="101.0" text="Label" />
+                                          <Label layoutX="28.0" layoutY="138.0" text="Label" />
+                                          <Label layoutX="28.0" layoutY="170.0" text="Label" />
+                                          <Label layoutX="28.0" layoutY="208.0" text="Label" />
+                                          <TextField layoutX="131.0" layoutY="9.0" styleClass="textfield_take" />
+                                          <TextField layoutX="131.0" layoutY="50.0" styleClass="textfield_take" />
+                                          <TextField layoutX="131.0" layoutY="86.0" styleClass="textfield_take" />
+                                          <TextField layoutX="131.0" layoutY="123.0" styleClass="textfield_take" />
+                                          <TextField layoutX="131.0" layoutY="155.0" styleClass="textfield_take" />
+                                          <TextField layoutX="131.0" layoutY="193.0" styleClass="textfield_take" />
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="12.0" layoutY="271.0" prefHeight="305.0" prefWidth="813.0" stylesheets="@DashboardDesign.css">
+                                 <styleClass>
+                                    <String fx:value="shadow" />
+                                    <String fx:value="white-bg" />
+                                 </styleClass>
+                                 <children>
+                                    <TableView layoutX="4.0" layoutY="7.0" prefHeight="290.0" prefWidth="806.0">
+                                      <columns>
+                                        <TableColumn prefWidth="100.0" text="C1" />
+                                        <TableColumn prefWidth="127.0" text="C2" />
+                                          <TableColumn prefWidth="146.0" text="Column X" />
+                                          <TableColumn prefWidth="128.0" text="Column X" />
+                                          <TableColumn prefWidth="159.0" text="Column X" />
+                                          <TableColumn prefWidth="144.0" text="Column X" />
+                                      </columns>
+                                    </TableView>
                                  </children>
                               </AnchorPane>
                            </children>
